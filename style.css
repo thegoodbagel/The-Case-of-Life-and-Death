@@ -1,0 +1,290 @@
+/* WHOLE DOCUMENT STUFF */
+
+:root{
+  --red: #ff654d;
+  --blue: #04286a;
+  --gray: #ECDDE2;
+  --cream: #faf8f7;
+  --sand: #FBB488;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* HOME PAGE STUFF */
+    /* NAV BAR STUFF */
+#nav_bar{
+  display: inline-block;
+  z-index: 1;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  background-color: rgba(0,0,0,0);
+  border-bottom-style: solid var(--red);
+  padding-left: 20px;
+  vertical-align: center;
+}
+
+.nav_button {
+  position: relative;
+  display: inline;
+  float: left;
+  padding: 0 10px;
+  margin: 0;
+  color: var(--blue);
+  font-family: 'EB Garamond', serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.dropdown_item{
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.dropdown_item:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#home_button{
+  padding: 1em;
+}
+
+.dropdown_wrapper {
+  display: none;
+  position: absolute;
+  background-color: var(--cream);
+  width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+  margin-left: -10px;
+  z-index: 1;
+}
+
+.nav_button:hover{
+  color: var(--red);
+}
+
+.nav_button:hover .dropdown_wrapper{
+  display: block;
+  list-style: none;
+}
+  /* TITLE STUFF */
+#title{
+  display: inline-block;
+  padding-top: 17vw;
+  padding-right: 5vw;
+  line-height: 1.5;
+  color: white;
+  font-size: 8vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#title_wrapper{
+  display: inline-block;
+  text-align: right;
+  background-image: url("/assets/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw auto;
+  width: 100vw;
+  height: 75vw;
+  /* make so you can scroll stuff over it */
+  position: fixed;
+  z-index: -1;
+}
+#home_content{
+  margin-top:65vw;
+}
+
+/* GENERAL STUFF */
+
+.inline_image{
+  max-width: 100vw;
+}
+    /* COLUMN STUFF */
+.column{
+  padding: 5px;
+  min-height: 400px;
+  flex: 1;
+  width: 0;
+  float:left;
+  margin: 3px;
+  position: inline;
+}
+
+.column_wrapper{
+  position: inline-block;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.column_header{
+  text-align: center;
+  color: var(--red);
+  text-transform: uppercase;
+  font-size: calc(14px + 1vw);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.header_line{
+  height: 1px;
+  background-color: var(--red);
+  border: none;
+}
+
+/* TEXT STUFF */
+.small_text{
+  font-family: 'EB Garamond', serif;
+}
+
+strong{
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+}
+
+
+section{
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  background-color: var(--cream);
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .column_wrapper{flex-direction: column;} 
+  .column{width: 100%; min-height: auto;}
+}
+
+#map{
+  display:inline-block;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  padding: 0;
+}
+
+    /* HEADER STUFF */
+.header_wrapper{
+  display: inline-block;
+  width: 100vw;
+  max-height: 50%;
+  overflow: hidden;
+  padding-top: 30vw;
+  padding-bottom: 5vw;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* make so you can scroll stuff over it */
+  position: fixed;
+  z-index: -1;
+}
+
+.big_header{
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 10vw;
+}
+
+.sub_header{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* INFO 1 (Ideology) STUFF */
+
+#info1_header_wrapper{
+  height: 50vw;
+  background-size: 100vw auto;
+  background-image: url("/assets/daughter.jpg");
+  color: white;
+  float: top right;
+  margin-top: -20vw;
+  width: 100vw;
+}
+
+#info1_header{
+  text-align: right;
+  padding-right: 1vw;
+  line-height: 1.5;
+  color: white;
+  font-size: 8vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-right: 3vw;
+}
+
+.sub_header{
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+}
+
+#info1_content{
+  margin-top: 50vw;
+}
+
+#info1_subheader{
+  text-align: right;
+  margin-right: 15vw;
+  font-size: 3vw;
+}
+
+/* INFO 2 (Women of Color) STUFF */
+
+#info2_header_wrapper{
+  margin: 0;
+  background-size: 135vw auto;
+  overflow: hidden;
+  height: 50vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/woman_crying.jpg");
+  color: white;
+}
+
+/* HELP 1 (Support) STUFF */
+
+#help1_header_wrapper{
+  background-image:   url("/assets/women_on_palm.jpeg");
+    background-size: 100vw auto;
+  color: white;
+  height: 60vw;
+  padding-top: 15vw;
+}
+
+#help1_header{
+  float: top right;
+  text-align: right;
+  padding-right: 1vw;
+  line-height: 1.5;
+  color: white;
+  font-size: 8vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: -7vw;
+  margin-right: 2vw;
+}
+
+#help1_content{
+  margin-top: 50vw;
+  display: inline-block;
+}
+
